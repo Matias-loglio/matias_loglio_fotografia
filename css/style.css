@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+                             /* grilla index */
+.grilla__index {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+    "header"
+    "fotoi" 
+    "footer";
+}
+
+.fotoi {
+    grid-area: fotoi;
+}
+
+.fotoi img {
+    width: 100%;
+}
+                                /* HEADER */
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 12, 12);
+    width: 100%;
+    height: 100px;
+}
+
+                                /* NAVEGADOR */
+.nav__header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__header ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.nav__header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 10px;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+                                /* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: rgb(66, 12, 12) ;
+    padding: 20px;
+}
+
+.nav__footer ul {
+    display: flex;
+}
+
+.nav__footer ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.nav__footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 10px;
+}
+
+.nav__footer ul li a img {
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 12px 10px;
+}
+
+.nav__copyright {
+    font-size: small;
+    padding: 10px;
+}
+
+                                /* grilla galeria */
+.grilla__galeria {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "foto1 foto1 foto2" 
+    "foto3 foto4 foto5"
+    "foto6 foto7 foto5"
+    "foto8 foto9 foto9"
+    "footer footer footer";
+}
+
+
+.estilofotos img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.estilofotos {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+.foto6 {
+    grid-area: foto6;
+}
+.foto7 {
+    grid-area: foto7;
+}
+.foto8 {
+    grid-area: foto8;
+}
+.foto9 {
+    grid-area: foto9;
+}
+
+                                /* Grilla-sobreMi */
+.grilla__sobreMi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "bio autoretrato" 
+    "footer footer";
+}
+
+.bio__contain {
+    grid-area: bio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 40px;
+}
+
+.bio__contain h2 {
+    padding: 15px;
+}
+
+.bio__autoretrato {
+    grid-area: autoretrato;
+} 
+
+                                                /* RESPONSIVE */
+
+                                             /*  * Grilla sobreMi */ 
+
+@media screen and (max-width: 1200px) {
+    .grilla__sobreMi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "autoretrato" 
+        "bio"
+        "footer";
+    }
+    .bio__autorretrato img {
+        width: 100%;
+}
+}
+
+                                                /* Grilla Galeria */
+@media screen and (max-width: 768px) {
+    .grilla__galeria {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "foto1 foto2" 
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8"
+        "foto9 foto9"
+        "footer footer";    
+}
+
+    .nav__header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+
+.bio__contain {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .grilla__galeria{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "titulo"
+        "foto1"
+        "foto2" 
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7"
+        "foto8"
+        "foto9"
+        "footer";      
+}
+
+    .nav__header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
