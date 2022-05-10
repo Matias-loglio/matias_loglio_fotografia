@@ -46,18 +46,18 @@ header {
 
 .nav__header ul li {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 .nav__header ul li a {
     text-decoration: none;
     color: white;
-    padding: 12px 10px;
+    padding: 0.75rem 0.625rem;
 }
 
 .logo {
-    width: 100px;
-    margin-left: 20px;
+    width: 6.25rem;
+    margin-left: 1.25rem;
 }
                                 /* FOOTER */
 footer {
@@ -67,7 +67,7 @@ footer {
     align-items: center;
     grid-area: footer;
     background-color: rgb(66, 12, 12) ;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .nav__footer ul {
@@ -76,25 +76,25 @@ footer {
 
 .nav__footer ul li {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 .nav__footer ul li a {
     text-decoration: none;
     color: white;
-    padding: 12px 10px;
+    padding: 0.75rem 0.625rem;
 }
 
 .nav__footer ul li a img {
-    width: 50px;
+    width: 3.125rem;
     background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    padding: 12px 10px;
+    border-radius: 3.125rem;
+    padding: 0.75rem 0.625rem;
 }
 
 .nav__copyright {
     font-size: small;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
                                 /* grilla galeria */
@@ -121,7 +121,7 @@ footer {
 .estilofotos {
     display: flex;
     justify-content: center;
-    padding: 3px;
+    padding: 0.188;
 }
 
 .foto1 {
@@ -171,17 +171,113 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
-    padding: 40px;
+    font-size: 1.563rem;
+    padding: 2.5rem;
 }
 
 .bio__contain h2 {
-    padding: 15px;
+    padding: 0.938rem;
 }
 
 .bio__autoretrato {
     grid-area: autoretrato;
 } 
+
+                                              /* Grilla contacto */
+
+.grilla__contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "contacto" 
+    "footer";
+}
+
+.contacto__section {
+    grid-area: contacto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto__titulo {
+    margin: 1.875rem;
+}
+
+.contacto__form {
+    min-width: 18.75rem;
+    background-color: #444;
+    margin: 3.125rem 1.875rem;
+}
+
+.Contacto__input__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__input {
+    width: 28.125rem;
+    padding: 0.625rem;
+    margin: 0.438rem 0;
+}
+
+.contacto__form textarea {
+    min-height: 9.375rem;
+    min-width: 28.125rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+.contacto__btn {
+    display: flex;
+    justify-content: end;
+}
+
+.contacto__btni {
+    width: 6.25rem;
+    height: 3.125rem;
+    margin: 1.25rem;
+}
+
+                                                /* Grilla mi__equipo */
+
+.grilla__equipo {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "tituloe tituloe tituloe"
+    "imagen1 imagen2 imagen3" 
+    "imagen4 imagen5 imagen6"
+    "footer footer footer";
+}
+
+.equipo__titulo {
+    grid-area: tituloe;
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem;
+}
+
+.imagen1 {
+    grid-area: imagen1 ;
+}
+.imagen2 {
+    grid-area: imagen2 ; 
+}
+.imagen3 {
+    grid-area: imagen3 ; 
+}
+.imagen4 {
+    grid-area: imagen4 ; 
+}
+.imagen5 {
+    grid-area: imagen5 ; 
+}
+.imagen6 {
+    grid-area: imagen6 ; 
+}
 
                                                 /* RESPONSIVE */
 

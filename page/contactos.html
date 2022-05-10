@@ -9,31 +9,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../recursos/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">  
-    <title>Matias Leonel Loglio</title>
+    <title>Contacto</title>
 </head>
 <body>
                 <!-- header -->
-    <header>
-        <nav>
-            <a href="../index.html"><img src="../recursos/favicon.ico" alt="logo"></a>
-            <ul>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="sobre-mi.html">Sobre mi</a></li>
-                <li><a href="mi-equipo.html">Mi Equipo</a></li>
-                <li><a href="contactos.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-                <!-- main -->
-    <main>
-        
-
-    </main>
-                <!-- footer -->
-    <footer>
-        <a href="#"><img src="../recursos/bxl-facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="../recursos/bxl-instagram.svg" alt="instagram"></a>
-        <a href="#"><img src="../recursos/bxl-500px.svg" alt="500px"></a>
-        <h2>© todos los derechos reservados</h2>
-    </footer>
+    <div class="grilla__contacto">
+        <header>
+                <div class="logo">
+                    <a href="../index.html"><img src="../recursos/favicon.ico" alt="logo"></a>
+                </div>
+                <nav class="nav__header">
+                    <ul>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="sobre-mi.html">Sobre mi</a></li>
+                        <li><a href="mi-equipo.html">Mi Equipo</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+                    <!-- main -->
+        <main>
+            <section  class="contacto__section">
+                <form class="contacto__form">
+                    <div class="contacto__titulo">
+                        <h2>Ponte en contacto conmigo</h2>
+                    </div>
+                    <div class="Contacto__input__cont">
+                        <label for="iname">Nombre</label>
+                        <input class="contacto__input" id="iname" type="text" name="name" placeholder="Escriba su nombre">
+                    </div>
+                    <div class="Contacto__input__cont">
+                        <label for="isurname">Apellido</label>
+                        <input class="contacto__input" id="isurname" type="text" name="surname" placeholder="Escriba su apellido">
+                    </div>
+                    <div class="Contacto__input__cont">
+                        <label for="iemail">Email*</label>
+                        <input class="contacto__input" id="iemail" type="email" name="email" placeholder="123j@email.com">
+                    </div>
+                    <div class="Contacto__input__cont">
+                        <label for="iasunto">Asunto*</label>
+                        <input class="contacto__input" id="iasunto" type="text" name="Asunto">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje*</label>
+                        <textarea class="contacto__textarea" name="" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="contacto__btn">
+                        <input class="contacto__btni" type="submit" value="Enviar">
+                    </div>
+                </form>
+            <section>
+        </main>
+                    <!-- footer -->
+        <footer>
+            <nav class="nav__footer">
+                <ul>
+                    <li><a href="#"><img src="../recursos/bxl-facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../recursos/bxl-instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="../recursos/bxl-500px.svg" alt="500px"></a></li>
+                </ul>
+            </nav>
+            <div class="nav__copyright">
+                <h2>© todos los derechos reservados</h2>
+            </div>
+        </footer>
+    </div>
 </body>
