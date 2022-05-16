@@ -128,32 +128,83 @@ footer {
     grid-area: foto1;
 }
 
+.foto1:hover {
+transform: scale(1.025);
+transition: all 2s;
+}
+
 .foto2 {
     grid-area: foto2;
 }
+
+.foto2:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
 
 .foto3 {
     grid-area: foto3;
 }
 
+.foto3:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
+
 .foto4 {
     grid-area: foto4;
+}
+
+.foto4:hover {
+    transform: scale(1.025);
+    transition: all 2s;
 }
 
 .foto5 {
     grid-area: foto5;
 }
+
+.foto5:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
 .foto6 {
     grid-area: foto6;
 }
+
+.foto6:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
 .foto7 {
     grid-area: foto7;
 }
+
+.foto7:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
 .foto8 {
     grid-area: foto8;
 }
+
+.foto8:hover {
+    transform: scale(1.025);
+    transition: all 2s;
+}
+
 .foto9 {
     grid-area: foto9;
+}
+
+.foto9:hover {
+    transform: scale(1.025);
+    transition: all 2s;
 }
 
                                 /* Grilla-sobreMi */
