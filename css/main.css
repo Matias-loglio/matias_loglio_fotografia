@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem; }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #420c0c;
+    padding: 1.25rem; }
+  body .nav__footer ul {
+    display: flex; }
+  body__footer ul li {
+    list-style-type: none;
+    margin: 0 0.625rem; }
+  body__footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 0.625rem; }
+  body__footer ul li a img {
+    width: 3.125rem;
+    background-color: white;
+    border-radius: 3.125rem;
+    padding: 0.75rem 0.625rem; }
+  body__copyright {
+    font-size: small;
+    padding: 0.625rem; }
+
+/* BIO */
+.bio__titulo {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0; }
+
+/* mi-equipo */
+.equipo__titulo {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0; }
