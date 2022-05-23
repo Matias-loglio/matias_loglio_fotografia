@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: $color-secundario;
+    padding: 1.25rem;
+
+    ul {
+        display: flex;
+    }
+    li {
+        list-style-type: none;
+        margin: 0 0.625rem;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 4.125rem;
+        border-radius: 3.125rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

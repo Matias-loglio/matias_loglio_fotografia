@@ -1,61 +1,44 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: #1f1b19;
+  padding: 1.25rem; }
+  footer ul {
+    display: flex; }
+  footer li {
+    list-style-type: none;
+    margin: 0 0.625rem; }
+  footer a {
+    text-decoration: none; }
+  footer img {
+    width: 4.125rem;
+    border-radius: 3.125rem; }
+  footer h2 {
+    font-size: 20px; }
+
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 body {
-    background-color: rgb(17, 17, 17);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.35rem;
-}
-
-                                /* FOOTER */
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-area: footer;
-    background-color: rgb(66, 12, 12) ;
-    padding: 1.25rem;
-}
-
-.nav__footer ul {
-    display: flex;
-}
-
-.nav__footer ul li {
-    list-style-type: none;
-    margin: 0 0.625rem;
-}
-
-.nav__footer ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0.75rem 0.625rem;
-}
-
-.nav__footer ul li a img {
-    width: 3.125rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3.125rem;
-    padding: 0.75rem 0.625rem;
-}
-
-.nav__copyright {
-    font-size: small;
-    padding: 0.625rem;
-}
-                                 /* BIO */
-.bio__titulo {
+  background-color: #1f1b19;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem; }
+  body .backgraundcolor {
+    background-color: #1f1b19; }
+  body .titulo__general {
     display: flex;
     justify-content: center;
-    margin: 1.25rem 0;
-}
-                                /* mi-equipo */
-.equipo__titulo {
-    display: flex;
-    justify-content: center;
-    margin: 1.25rem 0;  
-}
+    margin: 1.25rem 0; }
+  body .carousel__contain {
+    height: 56.25rem; }
+  body .btn__color {
+    background-color: #d18007;
+    color: white; }
+  body .img__transform:hover {
+    transform: scale(1.2);
+    transition: all 2s; }
