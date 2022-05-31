@@ -1,8 +1,5 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column);
     grid-area: footer;
     background-color: $color-secundario;
     padding: 1.25rem;

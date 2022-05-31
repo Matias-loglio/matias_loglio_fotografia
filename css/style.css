@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -30,6 +31,8 @@ body {
   font-size: 1.35rem; }
   body .backgraundcolor {
     background-color: #1f1b19; }
+  body .navbar-brand img {
+    padding-left: 100px; }
   body .titulo__general {
     display: flex;
     justify-content: center;
@@ -42,3 +45,54 @@ body {
   body .img__transform:hover {
     transform: scale(1.2);
     transition: all 2s; }
+  body .bio__contain p {
+    font-size: 20px; }
+  body .servicios__titulo {
+    display: flex;
+    justify-content: center;
+    margin: 30px; }
+  body .card {
+    background-color: #1f1b19;
+    margin: 40px;
+    box-shadow: 2px 4px 15px 0 #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    body .card__reverse {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center; }
+    body .card__servicios {
+      width: 400px;
+      height: auto;
+      margin: 20px; }
+    body .card__servicios img {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 2px 4px 15px 0 #000; }
+    body .card__texto {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      body .card__texto h2 {
+        margin-bottom: 25px; }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .bio__contain {
+    margin-top: 35px; } }
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .bio__contain {
+    margin-top: 40px; } }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .bio__contain {
+    margin: 40px; } }

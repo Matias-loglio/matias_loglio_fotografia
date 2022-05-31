@@ -1,5 +1,5 @@
 @import'variables';
-@import'header';
+@import'helpers';
 @import'footer';
 
 * {
@@ -15,6 +15,10 @@ body {
 
     .backgraundcolor {
         background-color: $color-secundario;
+    }
+
+    .navbar-brand img {
+        padding-left: 100px;
     }
     .titulo__general {
         display: flex;
@@ -34,5 +38,64 @@ body {
     .img__transform:hover {
         transform: scale(1.2);
         transition: all 2s;  
+    }
+
+    .bio__contain p {
+        font-size: 20px;
+    }
+
+    .servicios__titulo {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .card {
+            background-color: $color-secundario;
+            margin: 40px;   
+            box-shadow: 2px 4px 15px 0 #000; 
+            @include flex
+
+        &__reverse {
+            @include flex (row-reverse);
+        }
+
+        &__servicios {
+            @include medidas;
+            margin: 20px;
+        }
+    
+        &__servicios img {
+            @include medidas;
+            object-fit: cover;
+            box-shadow: 2px 4px 15px 0 #000; 
+        }
+    
+        &__texto {
+            @include flex (column);
+            width: 50%;
+            h2 {
+            margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .bio__contain {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width:541px) and (max-width:768px) {
+    .bio__contain {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width:320px) and (max-width:540px) {
+
+    .bio__contain {
+        margin: 40px;
     }
 }
