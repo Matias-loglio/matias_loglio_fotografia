@@ -8,17 +8,17 @@
 }
 
 body {
-    background-color: $color-secundario;
+    background: $background-principal;
+    background-image: url(../recursos/textura-baja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $color-principal;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.35rem;
-
-    .backgraundcolor {
-        background-color: $color-secundario;
-    }
+    font-family: $font-principal;
+    font-size: 1.25rem;
+    text-align: center;
 
     .navbar-brand img {
-        padding-left: 100px;
+        padding-left: 6.25rem;
     }
     .titulo__general {
         display: flex;
@@ -26,34 +26,31 @@ body {
         margin: 1.25rem 0;  
     }
     
-    .carousel__contain {
+    .carousel-item img {
         height: 56.25rem;
+        object-fit: cover;
     }
-    
+
+    .carousel__contain {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .btn__color {
         background-color: $color-boton;
         color: $color-letra;
     }
     
     .img__transform:hover {
-        transform: scale(1.2);
-        transition: all 2s;  
+        transform: scale(1.02);
+        transition: all 1.2s;  
+        opacity: 0.8;
     }
 
-    .bio__contain p {
-        font-size: 20px;
-    }
-
-    .servicios__titulo {
-        display: flex;
-        justify-content: center;
-        margin: 30px;
-    }
 
     .card {
-            background-color: $color-secundario;
-            margin: 40px;   
-            box-shadow: 2px 4px 15px 0 #000; 
+            background: $background-principal;
+            margin: 2.5rem;   
+            box-shadow: $Sombras; 
             @include flex
 
         &__reverse {
@@ -62,40 +59,62 @@ body {
 
         &__servicios {
             @include medidas;
-            margin: 20px;
+            margin: 1.25rem;
         }
     
         &__servicios img {
             @include medidas;
             object-fit: cover;
-            box-shadow: 2px 4px 15px 0 #000; 
+            box-shadow: $Sombras; 
         }
     
         &__texto {
             @include flex (column);
             width: 50%;
             h2 {
-            margin-bottom: 25px;
+            margin-bottom: 1.563rem;
             }
         }
     }
 }
 
+form div {
+    text-align:left;
+}
+
+.form-buttom {
+    margin-top: 1.25rem;
+    text-align:right;
+}
+
+.icono img{
+    width: 1.875rem;
+    height: auto;
+    
+}
+
+
+.bio__imagen {
+    object-fit: cover;
+    box-shadow: $Sombras;
+}
+
+
 @media (min-width:769px) and (max-width:1200px) {
-    .bio__contain {
-        margin-top: 35px;
+    .bio__Texto {
+        margin-top: 2.188rem;
     }
 }
 
 @media (min-width:541px) and (max-width:768px) {
-    .bio__contain {
-        margin-top: 40px;
+    .bio__Texto {
+        margin-top: 2.5rem;
     }
 }
 
 @media (min-width:320px) and (max-width:540px) {
 
-    .bio__contain {
-        margin: 40px;
+    .bio__Texto {
+        margin: 2.5rem;
     }
 }

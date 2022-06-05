@@ -5,7 +5,6 @@ footer {
   justify-content: center;
   align-items: center;
   grid-area: footer;
-  background-color: #1f1b19;
   padding: 1.25rem; }
   footer ul {
     display: flex; }
@@ -18,43 +17,44 @@ footer {
     width: 4.125rem;
     border-radius: 3.125rem; }
   footer h2 {
-    font-size: 20px; }
+    font-size: 1.25rem; }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #1f1b19;
+  background: linear-gradient(to right, #000000, #434343);
+  background-image: url(../recursos/textura-baja.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.35rem; }
-  body .backgraundcolor {
-    background-color: #1f1b19; }
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  text-align: center; }
   body .navbar-brand img {
-    padding-left: 100px; }
+    padding-left: 6.25rem; }
   body .titulo__general {
     display: flex;
     justify-content: center;
     margin: 1.25rem 0; }
+  body .carousel-item img {
+    height: 56.25rem;
+    object-fit: cover; }
   body .carousel__contain {
-    height: 56.25rem; }
+    display: flex;
+    flex-wrap: wrap; }
   body .btn__color {
     background-color: #d18007;
     color: white; }
   body .img__transform:hover {
-    transform: scale(1.2);
-    transition: all 2s; }
-  body .bio__contain p {
-    font-size: 20px; }
-  body .servicios__titulo {
-    display: flex;
-    justify-content: center;
-    margin: 30px; }
+    transform: scale(1.02);
+    transition: all 1.2s;
+    opacity: 0.8; }
   body .card {
-    background-color: #1f1b19;
-    margin: 40px;
-    box-shadow: 2px 4px 15px 0 #000;
+    background: linear-gradient(to right, #000000, #434343);
+    margin: 2.5rem;
+    box-shadow: 0.125rem 0.25rem 0.938rem 0 #000;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -67,14 +67,14 @@ body {
       justify-content: center;
       align-items: center; }
     body .card__servicios {
-      width: 400px;
+      width: 25rem;
       height: auto;
-      margin: 20px; }
+      margin: 1.25rem; }
     body .card__servicios img {
-      width: 400px;
+      width: 25rem;
       height: auto;
       object-fit: cover;
-      box-shadow: 2px 4px 15px 0 #000; }
+      box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
     body .card__texto {
       display: flex;
       flex-wrap: wrap;
@@ -83,16 +83,31 @@ body {
       align-items: center;
       width: 50%; }
       body .card__texto h2 {
-        margin-bottom: 25px; }
+        margin-bottom: 1.563rem; }
+
+form div {
+  text-align: left; }
+
+.form-buttom {
+  margin-top: 1.25rem;
+  text-align: right; }
+
+.icono img {
+  width: 1.875rem;
+  height: auto; }
+
+.bio__imagen {
+  object-fit: cover;
+  box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-  .bio__contain {
-    margin-top: 35px; } }
+  .bio__Texto {
+    margin-top: 2.188rem; } }
 
 @media (min-width: 541px) and (max-width: 768px) {
-  .bio__contain {
-    margin-top: 40px; } }
+  .bio__Texto {
+    margin-top: 2.5rem; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
-  .bio__contain {
-    margin: 40px; } }
+  .bio__Texto {
+    margin: 2.5rem; } }

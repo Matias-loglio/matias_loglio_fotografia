@@ -8,18 +8,24 @@
     <meta name="description" content="¡Hola! Soy fotógrafo, vivo en la ciudad de Paraná, Entre Ríos. En este sitio encontrarás experiencias y trabajos fotográficos que me han tocado vivir y disfrutar a lo largo de mis años en este oficio. Te invito a que lo recorras y estemos en contactos para generar nuevos proyectos juntos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:ital,wght@1,600&family=Montserrat:wght@500;800&family=Poppins:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     <link rel="shortcut icon" href="recursos/LOGO/MatiasLoglioFotografia-BLANCO.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Matías Loglio Fotografía</title>
 </head>
 <body>
-                <!-- header -->
+                <!-- header/Nav -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark backgraundcolor" >
+        <nav class="navbar navbar-expand-lg navbar-dark backgraundcolor">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../PROYECTO FINAL/index.html"><img class="animate__animated animate__flash" src="recursos/LOGO/MatiasLoglioFotografia-BLANCO.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -49,40 +55,43 @@
         </nav>
     </header>
                 <!-- main -->
-    <main class="main__index">
+    <main>
                 <!-- carrousel de imagenes -->
-        <section class="container-fluid ">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/luchi.jpg" class="d-block w-100" alt="modelo1">
+        <div class="carousel__contain">
+            <section class="container-fluid" data-aos="fade-up"
+            data-aos-duration="1000">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/luchi.jpg" class="d-block w-100 " alt="modelo mirando por sobre sus lentes de sol al atardecer">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/sesion moda (16).jpg" class="d-block w-100 " alt="modelo con un ramo de flores">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/irina (1).jpg" class="d-block w-100 " alt="retrato de modelo con una margarita tapandole un ojo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/juli.jpg" class="d-block w-100 " alt="Retrato a modelo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/sesion moda (2).jpg" class="d-block w-100 " alt="retrato a modelo entre plantas">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="recursos/carrousel imagenes/imagenes carousel/irina (2).jpg" class="d-block w-100 " alt="retrato a modelo">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/sesion moda (16).jpg" class="d-block w-100" alt="modelos">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/irina (1).jpg" class="d-block w-100" alt="modelo2">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/juli.jpg" class="d-block w-100" alt="modelo3">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/sesion moda (2).jpg" class="d-block w-100" alt="modelo4">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="recursos/carrousel imagenes/imagenes carousel/irina (2).jpg" class="d-block w-100" alt="modelo5">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
                 <!-- footer -->
     <footer>
@@ -97,6 +106,12 @@
             <h2>© todos los derechos reservados</h2>
         </div>
     </footer>
+    
+            <!-- script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

@@ -13,13 +13,14 @@
     <link rel="shortcut icon" href="../recursos/LOGO/MatiasLoglioFotografia-32x16BLANCO.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">  
     <title>Matías Loglio fotografía - Contacto</title>
 </head>
 <body>
-                <!-- header -->
+                <!-- header/Nav -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark backgraundcolor" >
+        <nav class="navbar navbar-expand-lg navbar-dark backgraundcolor " >
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img src="../recursos/LOGO/MatiasLoglioFotografia-BLANCO.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -41,45 +42,56 @@
                             <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contactos.html">contactos</a>
+                            <a class="nav-link active" href="contactos.html">Contactos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-                    <!-- main -->
-    <main class="container">
-        <div class="col mt-3">
-            <h1>Contacto</h1>
+                <!-- main -->
+    <main>
+        <div class="container">
+            <div class="col mt-3" data-aos="zoom-in" data-aos-duration="1000">
+                <h1>Contacto</h1>
+            </div>
+            <div class="row align-items-center ">
+                <form class="col-xl-6 col-md-12 col-sm-12 g-3 mt-3 justify-content-between" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                    <div class="col">
+                        <label for="iname" class="form-label">Nombre*</label>
+                        <input type="text" class="form-control" id="iname" name="nombre" required placeholder="escribe tu Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="iapellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="iapellido" name="apellido" placeholder="escribe tu Apellido">
+                    </div>
+                    <div class="col">
+                        <label for="iemail" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="iemail" name="email" required placeholder="escribe tu Email">
+                    </div>
+                    <div class="col">
+                        <label for="iasunto" class="form-label">Asunto*</label>
+                        <input type="text" class="form-control" id="iasunto" name="asunto" required placeholder="Asunto">
+                    </div>
+                    <div class="col">
+                        <label for="itextarea">Mensaje*</label>
+                        <textarea name="text-area" class="form-control" id="itextarea" required cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="col mb-3 form-buttom">
+                        <button type="submit" class="btn btn__color">Enviar</button>
+                    </div>
+                </form>
+                <div class="col-xl-6 col-md-12 col-sm-12 g-3" >
+                    <div class="col justify-content-center align-items-center">
+                        <div class="icono "><img src="../recursos/logo correo_Mesa de trabajo 1.png" alt=""> matiaslogliofotografias@gmail.com</div>
+                        <div class="icono"><img src="../recursos/logo ubi_Mesa de trabajo 1.png" alt=""> Nogoya 560, Paraná - Entre Ríos</div>
+                        <div class="icono"><img src="../recursos/logo whatsapp_Mesa de trabajo 1.png" alt=""> (343)5174225</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form class="row g-3 mt-3">
-            <div class="col-6">
-                <label for="iname" class="form-label">Nombre*</label>
-                <input type="text" class="form-control" id="iname" name="nombre" placeholder="escribe tu Nombre">
-            </div>
-            <div class="col-6">
-                <label for="iapellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="iapellido" name="apellido" placeholder="escribe tu Apellido">
-            </div>
-            <div class="col-12">
-                <label for="iemail" class="form-label">Email*</label>
-                <input type="email" class="form-control" id="iemail" name="email" placeholder="escribe tu Email">
-            </div>
-            <div class="col">
-                <label for="iasunto" class="form-label">Asunto*</label>
-                <input type="email" class="form-control" id="iasunto" name="asunto" placeholder="Asunto">
-            </div>
-            <div>
-                <label for="itextarea">Mensaje*</label>
-                <textarea name="text-area" class="form-control" id="itextarea" cols="30" rows="10"></textarea>
-            </div>
-            <div class="col mb-3">
-                <button type="submit" class="btn btn__color">Enviar</button>
-            </div>
-        </form>
     </main>
-                    <!-- footer -->
+                <!-- footer -->
     <footer>
         <nav>
             <ul>
@@ -92,6 +104,12 @@
             <h2>© todos los derechos reservados</h2>
         </div>
     </footer>
+
+                <!-- SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
