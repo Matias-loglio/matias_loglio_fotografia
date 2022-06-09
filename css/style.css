@@ -31,13 +31,20 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
-  text-align: center; }
+  text-align: start; }
   body .navbar-brand img {
     padding-left: 6.25rem; }
-  body .titulo__general {
+  body .titulo {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 1.25rem 0; }
+    body .titulo .titulo__borde {
+      border-bottom: 2px outset;
+      width: 400px;
+      text-align: center;
+      user-select: none;
+      margin-bottom: 30px; }
   body .carousel-item img {
     height: 56.25rem;
     object-fit: cover; }
@@ -67,11 +74,11 @@ body {
       justify-content: center;
       align-items: center; }
     body .card__servicios {
-      width: 25rem;
+      width: 400px;
       height: auto;
       margin: 1.25rem; }
     body .card__servicios img {
-      width: 25rem;
+      width: 400px;
       height: auto;
       object-fit: cover;
       box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }

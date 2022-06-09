@@ -6,6 +6,13 @@
     align-items: center;
 }
 @mixin medidas ($width:400px,$height:auto) {
-    width: 25rem;
+    width: $width;
     height: auto;
+}
+
+@mixin border {
+    width: 400px;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 30px;
 }
