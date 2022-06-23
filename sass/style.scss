@@ -21,15 +21,19 @@ body {
         padding-left: 6.25rem;
     }
     .titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1.25rem 0;   
+        @include flex
+        margin: 1.25rem 0;  
+        padding-top: 5px; 
     
     .titulo__borde {
-        border-bottom: 2px outset;
+        border-bottom: 1px outset;
         @include border
     }
+    }
+
+    .encabezado {
+        @include flex
+        padding: 10px;
     }
 
     .carousel-item img {
@@ -37,13 +41,27 @@ body {
         object-fit: cover;
     }
 
-    .carousel__contain {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .btn__color {
         background-color: $color-boton;
         color: $color-letra;
+        border-bottom: none;
+    }
+    .btn__color:active {
+        background: linear-gradient(to bottom, transparent,$color-boton);
+        color: $color-letra;
+    }
+
+    .form__input{
+        background: #222;
+        color: #fff;
+        border-bottom: 2px solid $color-boton;
+    }
+    .form__input:focus {
+        background: linear-gradient(to top, transparent,#333);
+        color: #fff;
+    }
+    form textarea {
+        resize: none;
     }
     
     .img__transform:hover {
@@ -52,13 +70,16 @@ body {
         opacity: 0.8;
     }
     .card {
-            background: $background-principal;
+            background: linear-gradient(to bottom, transparent,#111);
+            border-left: 2px solid $color-boton;
             margin: 2.5rem;   
             box-shadow: $Sombras; 
             @include flex
 
         &__reverse {
             @include flex (row-reverse);
+            border: none;
+            border-right: 2px solid $color-boton;
         }
 
         &__servicios {
@@ -91,6 +112,19 @@ form div {
     text-align:right;
 }
 
+.buttom {
+    @include flex
+    margin-top:20px ;
+}
+
+.buttom__up {
+    background-color: $color-boton;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+.buttom__up:hover {
+    background-color: rgb(255, 136, 0);
+}
 .icono img{
     width: 1.875rem;
     height: auto;
