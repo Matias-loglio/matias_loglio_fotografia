@@ -5,10 +5,6 @@
     justify-content: center;
     align-items: center;
 }
-@mixin medidas ($width:400px,$height:auto) {
-    width: $width;
-    height: auto;
-}
 
 @mixin border {
     width: 400px;

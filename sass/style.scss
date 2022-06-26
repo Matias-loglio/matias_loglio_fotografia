@@ -15,50 +15,60 @@ body {
     color: $color-principal;
     font-family: $font-principal;
     font-size: 1.25rem;
-    text-align: start;
+    text-align: center;
 
     .navbar-brand img {
         padding-left: 6.25rem;
     }
     .titulo {
-        @include flex
+        @include flex;
         margin: 1.25rem 0;  
-        padding-top: 5px; 
+        padding-top: 0.313rem; 
     
-    .titulo__borde {
+    &__borde {
         border-bottom: 1px outset;
         @include border
     }
     }
 
     .encabezado {
-        @include flex
-        padding: 10px;
+        @include flex;
+        padding: 0.625rem;
     }
 
     .carousel-item img {
-        height: 56.25rem;
+        width: 100%;
+        height: 100vh;
+        max-width: 120rem;
+        max-height: 60.6rem;
+        min-height: 53rem;
         object-fit: cover;
+    }
+
+    .carousel__titulo {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Chronicle Display';
     }
 
     .btn__color {
         background-color: $color-boton;
-        color: $color-letra;
+        color: $color-principal;
         border-bottom: none;
     }
     .btn__color:active {
         background: linear-gradient(to bottom, transparent,$color-boton);
-        color: $color-letra;
+        color: $color-principal;
     }
 
     .form__input{
         background: #222;
-        color: #fff;
+        color: $color-principal;
         border-bottom: 2px solid $color-boton;
     }
     .form__input:focus {
         background: linear-gradient(to top, transparent,#333);
-        color: #fff;
+        color: $color-principal;
     }
     form textarea {
         resize: none;
@@ -70,12 +80,13 @@ body {
         opacity: 0.8;
     }
     .card {
+            @include flex;
             background: linear-gradient(to bottom, transparent,#111);
             border-left: 2px solid $color-boton;
-            margin: 2.5rem;   
+            border-radius: 15px;
+            margin: 2.5rem; 
             box-shadow: $Sombras; 
-            @include flex
-
+            
         &__reverse {
             @include flex (row-reverse);
             border: none;
@@ -83,59 +94,61 @@ body {
         }
 
         &__servicios {
-            @include medidas;
+            @include flex;
             margin: 1.25rem;
         }
     
         &__servicios img {
-            @include medidas;
-            object-fit: cover;
+            width: 100%;
+            min-width: 10rem;
+            max-width: 30rem;
+            object-fit: contain;
+            border-radius: 15px;
             box-shadow: $Sombras; 
         }
     
         &__texto {
             @include flex (column);
             width: 50%;
-            h2 {
-            margin-bottom: 1.563rem;
-            }
+            min-width: 20rem;
+            padding: 20px;
         }
     }
-}
-
-form div {
-    text-align:left;
-}
-
-.form-buttom {
-    margin-top: 1.25rem;
-    text-align:right;
-}
-
-.buttom {
-    @include flex
-    margin-top:20px ;
-}
-
-.buttom__up {
-    background-color: $color-boton;
-    border-radius: 25px;
-    margin: 20px 0;
-}
-.buttom__up:hover {
-    background-color: rgb(255, 136, 0);
-}
-.icono img{
-    width: 1.875rem;
-    height: auto;
     
-}
+    .form-buttom {
+        margin-top: 1.25rem;
+        text-align:right;
+    }
+    
+    .buttom {
+        @include flex;
+        margin-top:20px ;
+    
+    
+    &__up {
+        background-color: $color-boton;
+        border-radius: 25px;
+        margin: 20px 0;
+    }
+    &__up:hover {
+        background-color: rgb(241, 96, 0);
+    }
+    }
 
-.bio__imagen {
-    object-fit: cover;
-    box-shadow: $Sombras;
+    .icono{
+        margin: 10px;
+    
+    & img{
+        width: 1.875rem;
+        height: auto;
+        padding: 4px;
+    }
+    }
+    .bio__imagen {
+        object-fit: cover;
+        box-shadow: $Sombras;
+    }
 }
-
 
 
 @media (min-width:769px) and (max-width:1200px) {
@@ -146,13 +159,13 @@ form div {
 
 @media (min-width:541px) and (max-width:768px) {
     .bio__Texto {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
 }
 
 @media (min-width:320px) and (max-width:540px) {
 
-    .bio__Texto {
-        margin: 2.5rem;
+    .icono span {
+        font-size: 13px;
     }
 }

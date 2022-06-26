@@ -31,7 +31,7 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
-  text-align: start; }
+  text-align: center; }
   body .navbar-brand img {
     padding-left: 6.25rem; }
   body .titulo {
@@ -41,8 +41,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1.25rem 0;
-    padding-top: 5px; }
-    body .titulo .titulo__borde {
+    padding-top: 0.313rem; }
+    body .titulo__borde {
       border-bottom: 1px outset;
       width: 400px;
       text-align: center;
@@ -54,10 +54,18 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px; }
+    padding: 0.625rem; }
   body .carousel-item img {
-    height: 56.25rem;
+    width: 100%;
+    height: 100vh;
+    max-width: 120rem;
+    max-height: 60.6rem;
+    min-height: 53rem;
     object-fit: cover; }
+  body .carousel__titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Chronicle Display'; }
   body .btn__color {
     background-color: #f17500;
     color: #fff;
@@ -79,15 +87,16 @@ body {
     transition: all 1.2s;
     opacity: 0.8; }
   body .card {
-    background: linear-gradient(to bottom, transparent, #111);
-    border-left: 2px solid #f17500;
-    margin: 2.5rem;
-    box-shadow: 0.125rem 0.25rem 0.938rem 0 #000;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background: linear-gradient(to bottom, transparent, #111);
+    border-left: 2px solid #f17500;
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
     body .card__reverse {
       display: flex;
       flex-wrap: wrap;
@@ -97,13 +106,18 @@ body {
       border: none;
       border-right: 2px solid #f17500; }
     body .card__servicios {
-      width: 400px;
-      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       margin: 1.25rem; }
     body .card__servicios img {
-      width: 400px;
-      height: auto;
-      object-fit: cover;
+      width: 100%;
+      min-width: 10rem;
+      max-width: 30rem;
+      object-fit: contain;
+      border-radius: 15px;
       box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
     body .card__texto {
       display: flex;
@@ -111,40 +125,34 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%; }
-      body .card__texto h2 {
-        margin-bottom: 1.563rem; }
-
-form div {
-  text-align: left; }
-
-.form-buttom {
-  margin-top: 1.25rem;
-  text-align: right; }
-
-.buttom {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px; }
-
-.buttom__up {
-  background-color: #f17500;
-  border-radius: 25px;
-  margin: 20px 0; }
-
-.buttom__up:hover {
-  background-color: #ff8800; }
-
-.icono img {
-  width: 1.875rem;
-  height: auto; }
-
-.bio__imagen {
-  object-fit: cover;
-  box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
+      width: 50%;
+      min-width: 20rem;
+      padding: 20px; }
+  body .form-buttom {
+    margin-top: 1.25rem;
+    text-align: right; }
+  body .buttom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    body .buttom__up {
+      background-color: #f17500;
+      border-radius: 25px;
+      margin: 20px 0; }
+    body .buttom__up:hover {
+      background-color: #f16000; }
+  body .icono {
+    margin: 10px; }
+    body .icono img {
+      width: 1.875rem;
+      height: auto;
+      padding: 4px; }
+  body .bio__imagen {
+    object-fit: cover;
+    box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .bio__Texto {
@@ -152,8 +160,8 @@ form div {
 
 @media (min-width: 541px) and (max-width: 768px) {
   .bio__Texto {
-    margin-top: 2.5rem; } }
+    margin-top: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
-  .bio__Texto {
-    margin: 2.5rem; } }
+  .icono span {
+    font-size: 13px; } }
