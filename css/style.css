@@ -63,7 +63,7 @@ body {
     min-height: 53rem;
     object-fit: cover; }
   body .carousel__titulo {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-family: 'Chronicle Display'; }
   body .btn__color {
@@ -94,7 +94,7 @@ body {
     align-items: center;
     background: linear-gradient(to bottom, transparent, #111);
     border-left: 2px solid #f17500;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     margin: 2.5rem;
     box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
     body .card__reverse {
@@ -117,7 +117,7 @@ body {
       min-width: 10rem;
       max-width: 30rem;
       object-fit: contain;
-      border-radius: 15px;
+      border-radius: 0.938rem;
       box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
     body .card__texto {
       display: flex;
@@ -127,7 +127,7 @@ body {
       align-items: center;
       width: 50%;
       min-width: 20rem;
-      padding: 20px; }
+      padding: 1.25rem; }
   body .form-buttom {
     margin-top: 1.25rem;
     text-align: right; }
@@ -137,19 +137,19 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; }
+    margin: top 1.25rem; }
     body .buttom__up {
       background-color: #f17500;
-      border-radius: 25px;
-      margin: 20px 0; }
+      border-radius: 1.563rem;
+      margin: 1.25rem 0; }
     body .buttom__up:hover {
       background-color: #f16000; }
   body .icono {
-    margin: 10px; }
+    margin: 0.625rem; }
     body .icono img {
       width: 1.875rem;
       height: auto;
-      padding: 4px; }
+      padding: 0.25rem; }
   body .bio__imagen {
     object-fit: cover;
     box-shadow: 0.125rem 0.25rem 0.938rem 0 #000; }
@@ -164,4 +164,4 @@ body {
 
 @media (min-width: 320px) and (max-width: 540px) {
   .icono span {
-    font-size: 13px; } }
+    font-size: 0.813rem; } }
